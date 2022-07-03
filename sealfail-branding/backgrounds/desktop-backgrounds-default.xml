@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE wallpapers SYSTEM "gnome-wp-list.dtd">
+<wallpapers>
+    <wallpaper deleted="false">
+        <name>Mountains Light</name>
+        <filename>/usr/share/backgrounds/Alma-mountains-white.xml</filename>
+        <options>zoom</options>
+    </wallpaper>
+
+    <wallpaper deleted="false">
+        <name>Mountains Dark</name>
+        <filename>/usr/share/backgrounds/Alma-mountains-dark.xml</filename>
+        <options>zoom</options>
+    </wallpaper>
+
+    <wallpaper deleted="false">
+        <name>Waves Light</name>
+        <filename>/usr/share/backgrounds/Alma-waves-light.xml</filename>
+        <options>zoom</options>
+    </wallpaper>
+
+    <wallpaper deleted="false">
+        <name>Waves Dark</name>
+        <filename>/usr/share/backgrounds/Alma-waves-dark.xml</filename>
+        <options>zoom</options>
+    </wallpaper>
+
+    <wallpaper deleted="false">
+        <name>Waves Sunset</name>
+        <filename>/usr/share/backgrounds/Alma-waves-sunset.xml</filename>
+        <options>zoom</options>
+    </wallpaper>
+
+    <wallpaper deleted="false">
+        <name>Abstract Dark</name>
+        <filename>/usr/share/backgrounds/Alma-abstract-dark.xml</filename>
+        <options>zoom</options>
+    </wallpaper>
+
+    <wallpaper deleted="false">
+        <name>Abstract Light</name>
+        <filename>/usr/share/backgrounds/Alma-abstract-light.xml</filename>
+        <options>zoom</options>
+    </wallpaper>
+
+    <wallpaper deleted="false">
+        <name>Dark</name>
+        <filename>/usr/share/backgrounds/Alma-dark.xml</filename>
+        <options>zoom</options>
+    </wallpaper>
+
+    <wallpaper deleted="false">
+        <name>Light</name>
+        <filename>/usr/share/backgrounds/Alma-light.xml</filename>
+        <options>zoom</options>
+    </wallpaper>
+</wallpapers>
