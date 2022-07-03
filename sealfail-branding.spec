@@ -1,6 +1,4 @@
 %global codename sphericalcow
-# Package is only arch specific due to missing deps on arm
-# Debuginfo package is useless.
 %global debug_package %{nil}
 
 Name:       sealfail-branding
@@ -28,6 +26,12 @@ BuildRequires: syslinux-perl, netpbm-progs
 Requires(post): coreutils
 BuildRequires: hardlink
 
+%package ipa
+Summary: SEALFAIL-related icons and pictures used by ipa
+Provides: system-logos-ipa = %{version}-%{release}
+Provides: redhat-logos-ipa = %{version}-%{release}
+BuildArch: noarch
+
 %package -n sealfail-backgrounds
 Summary: SEALFAIL desktop backgrounds
 BuildArch: noarch
@@ -35,10 +39,6 @@ BuildArch: noarch
 Obsoletes: sealfail-logos < 80.1-2
 Provides:  system-backgrounds = %{version}-%{release}
 Requires:  sealfail-logos = %{version}-%{release}
-
-%description -n sealfail-backgrounds
-Licensed only for approved usage, see COPYING for details.
-
 
 %prep
 %setup -q
@@ -176,6 +176,14 @@ gtk-update-icon-cache %{_datadir}/icons/hicolor &>/dev/null || :
 %dir %{_datadir}/firstboot/themes/
 %dir %{_datadir}/plymouth/
 %dir %{_datadir}/plymouth/themes/
+
+%files ipa
+%license COPYING
+%{_datadir}/ipa/ui/images/*
+%dir %{_datadir}/ipa
+%dir %{_datadir}/ipa/ui
+%dir %{_datadir}/ipa/ui/images
+
 
 %files -n sealfail-backgrounds
 %license COPYING
