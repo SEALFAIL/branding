@@ -17,8 +17,8 @@ TEXT_SUCC="[${TEXT_GREEN}+${TEXT_RESET}]"
 # Variables
 LOGFILE="buildlog.txt"
 PACKAGE_NAME="sealfail-branding"
-SOURCE_FOLDER="`pwd`/${PACKAGE_NAME}"
-SOURCE_ARCHIVE="`pwd`/${PACKAGE_NAME}.tar.xz"
+SOURCE_FOLDER="${PACKAGE_NAME}"
+SOURCE_ARCHIVE="${PACKAGE_NAME}.tar.xz"
 
 # Print the banner
 echo '   _____ _________    __    _________    ______ '
@@ -48,11 +48,11 @@ else
 	echo -e "${TEXT_SUCC} Built the source archive"
 fi
 
-
+mv ${SOURCE_ARCHIVE} /home/${USER}/rpmbuild/SOURCES/${SOURCE_ARCHIVE}
 
 # Build the RPM
 echo -n -e "${TEXT_INFO} Building the RPM package..."
-rpmbuild -ba -q ${SPECFILE} &>> ${LOGFILE}
+rpmbuild -ba ${SPECFILE} &>> ${LOGFILE}
 if [ $? -ne 0 ]; then
         echo -n -e "${LINE_RESET}"
         echo -e "${TEXT_FAIL} Couldn't build the RPM package"
