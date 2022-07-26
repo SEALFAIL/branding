@@ -24,6 +24,7 @@ mkdir -p %{buildroot}/usr/share/glib-2.0/schemas
 
 #Install the wallpapers
 install -m 0644 SEALFAIL.xml %{buildroot}/usr/share/backgrounds/SEALFAIL.xml
+install -m 0644 desktop-backgrounds-default.xml %{buildroot}/usr/share/backgrounds/desktop-backgrounds-default.xml
 install -m 0644 SEALFAIL-1800x1440.jpg %{buildroot}/usr/share/backgrounds/SEALFAIL-1800x1440.jpg
 install -m 0644 SEALFAIL-2048x1536.jpg %{buildroot}/usr/share/backgrounds/SEALFAIL-2048x1536.jpg
 install -m 0644 SEALFAIL-2560x1440.jpg %{buildroot}/usr/share/backgrounds/SEALFAIL-2560x1440.jpg
@@ -37,6 +38,7 @@ install -m 0644 10_org.gnome.desktop.background.default.gschema.override %{build
 
 %files
 %attr(0644,root,root) /usr/share/backgrounds/SEALFAIL.xml
+%attr(0644,root,root) /usr/share/backgrounds/desktop-backgrounds-default.xml
 %attr(0644,root,root) /usr/share/backgrounds/SEALFAIL-1800x1440.jpg
 %attr(0644,root,root) /usr/share/backgrounds/SEALFAIL-2048x1536.jpg
 %attr(0644,root,root) /usr/share/backgrounds/SEALFAIL-2560x1080.jpg
