@@ -19,6 +19,7 @@ LOGFILE="buildlog.txt"
 PACKAGE_NAME="sealfail-branding"
 SOURCE_FOLDER="${PACKAGE_NAME}"
 SOURCE_ARCHIVE="${PACKAGE_NAME}.tar.xz"
+SPECFILE="${PACKAGE_NAME}.spec"
 
 # Print the banner
 echo '   _____ _________    __    _________    ______ '
@@ -48,7 +49,7 @@ else
 	echo -e "${TEXT_SUCC} Built the source archive"
 fi
 
-mv ${SOURCE_ARCHIVE} /home/${USER}/rpmbuild/SOURCES/${SOURCE_ARCHIVE}
+mv ${SOURCE_ARCHIVE} /root/rpmbuild/SOURCES/${SOURCE_ARCHIVE}
 
 # Build the RPM
 echo -n -e "${TEXT_INFO} Building the RPM package..."
