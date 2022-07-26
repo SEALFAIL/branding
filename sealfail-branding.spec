@@ -13,6 +13,8 @@ The SEALFAIL branding things
 
 %prep
 %setup -q -n %{name}
+mkdir -p /usr/share/backgrounds/
+mkdir -p /usr/share/glib-2.0/schemas/
 
 %build
 
