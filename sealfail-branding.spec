@@ -29,8 +29,8 @@ install -m 0644 SEALFAIL-2560x1600.jpg %{buildroot}/usr/share/backgrounds/SEALFA
 install -m 0644 SEALFAIL-3440x1440.jpg %{buildroot}/usr/share/backgrounds/SEALFAIL-3440x1440.jpg
 
 #Install the GNOME overrides
-install -m 0644 org.gnome.desktop.screensaver.fedora.gschema.override %{buildroot}/usr/share/glib-2.0/schemas/org.gnome.desktop.screensaver.fedora.gschema.override
-install -m 0644 org.gnome.desktop.background.fedora.gschema.override %{buildroot}/usr/share/glib-2.0/schemas/org.gnome.desktop.background.fedora.gschema.override
+install -m 0644 10_org.gnome.desktop.screensaver.fedora.gschema.override %{buildroot}/usr/share/glib-2.0/schemas/10_org.gnome.desktop.screensaver.fedora.gschema.override
+install -m 0644 10_org.gnome.desktop.background.fedora.gschema.override %{buildroot}/usr/share/glib-2.0/schemas/10_org.gnome.desktop.background.fedora.gschema.override
 
 %files
 %attr(0644,root,root) /usr/share/xml/scap/sealfail/sealfail.xml
