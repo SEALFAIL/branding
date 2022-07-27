@@ -38,7 +38,7 @@ install -m 0644 10_org.gnome.desktop.screensaver.default.gschema.override %{buil
 install -m 0644 10_org.gnome.desktop.background.default.gschema.override %{buildroot}/usr/share/sealfail/branding/glib-2.0/schemas/10_org.gnome.desktop.background.default.gschema.override
 
 %post
-mv /usr/share/sealfail/branding/* /usr/share/
+cp -r /usr/share/sealfail/branding/* /usr/share/
 
 %files
 %attr(0644,root,root) /usr/share/sealfail/branding/backgrounds/SEALFAIL.xml
