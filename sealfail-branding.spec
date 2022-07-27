@@ -5,7 +5,7 @@ Summary:        The SEALFAIL branding things
 License:        GPLv3
 Source0: 	%{name}.tar.xz
 BuildArch:      noarch
-Requires:	almalinux-branding almalinux-logos almalinux-backgrounds
+Requires:	almalinux-backgrounds
 
 %description
 The SEALFAIL branding things
